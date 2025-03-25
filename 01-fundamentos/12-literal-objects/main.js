@@ -25,3 +25,11 @@ console.log("Ultimo Traje:", personaje.trajes[personaje.trajes.length - 1]);
 
 const x = "vivo";
 console.log("Vivo:", personaje[x]);
+
+// Borra la propiedad edad del objeto personaje
+delete personaje.edad;
+console.log(personaje);
+
+// Object.entries(personaje) convierte el objeto personaje en un array de pares clave-valor
+const entriesPares = Object.entries(personaje);
+console.log("entriesPares:", entriesPares);
