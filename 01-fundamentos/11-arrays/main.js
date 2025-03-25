@@ -17,3 +17,4 @@ let arregloCosas = [
   ["X", "Megaman", "Zero", "Dr. Light", ["Dr. Willy", "Woodman"]],
 ];
 console.log(`Arreglo de cosas: ${arregloCosas}`);
+console.log(`Dr. Ligth: ${arregloCosas[7][3]}`);
