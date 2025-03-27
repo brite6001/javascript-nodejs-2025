@@ -22,3 +22,9 @@ let tony = cambiaNombre(peter);
 console.log({ peter, tony });
 // Como los objetos se pasan por referencia, la función modifica directamente 'peter'
 // 'tony' apunta al mismo objeto, por lo que ambos muestran { nombre: "Tony" }
+
+const frutas = ["Manzana", "Pera", "Piña"];
+const otrasFrutas = [...frutas]; // operador spread para crear una copia
+// const otrasFrutas = frutas; // asignación por referencia
+otrasFrutas.push("Mango");
+console.table({ frutas, otrasFrutas });
