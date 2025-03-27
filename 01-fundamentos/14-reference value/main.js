@@ -28,3 +28,7 @@ const otrasFrutas = [...frutas]; // operador spread para crear una copia
 // const otrasFrutas = frutas; // asignación por referencia
 otrasFrutas.push("Mango");
 console.table({ frutas, otrasFrutas });
+
+console.time("slice");
+const masFrutas = frutas.slice();
+console.timeEnd("slice");
