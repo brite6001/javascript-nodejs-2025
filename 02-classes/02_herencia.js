@@ -48,18 +48,19 @@ class Persona {
   }
 }
 
-const spiderman = new Persona("Peter Parker", "Spiderman", "Wikispider");
-const ironman = new Persona("Tony Stark", "Ironman", "Wikinman");
-console.log(spiderman);
-console.log(ironman);
+class Heroe extends Persona {
+  ciudad = "";
 
+  constructor(nombre, codigo, frase) {
+    super(nombre, codigo, frase);
+    this.ciudad = "New York";
+  }
+
+  quienSoy() {
+    console.log(`Soy ${this.nombre} y vivo en ${this.ciudad}`);
+    super.quienSoy();
+  }
+}
+
+const spiderman = new Heroe("Ramón Sosa", "Spiderman", "Wikispider");
 spiderman.quienSoy();
-spiderman.miFrase();
-
-spiderman.setComidaFavorita = "pizza";
-console.log(spiderman.getComidaFavorita);
-
-Persona._conteo = 10;
-console.log(`Conteo estatico: ${Persona._conteo}`);
-console.log(Persona.getConteo);
-Persona.mensajes();
