@@ -10,10 +10,16 @@ export const promiseComponent = (element) => {
     element.innerHTML = hero.name;
   };
 
+  const renderError = (error ) => {
+    element.innerHTML = `
+        <h2>🚨 ${error}</h2>	t
+    `;
+  }
+
   const id1 = "5d86371f25a058e5b1c8a65e";
   const id2 = "5d86371fd55e2e2a30fe1ccb";
 
-  findHero(id1).then((hero) => renderHero(hero));
+  findHero(id1).then((hero) => renderHero(hero)).catch((error) => renderError(error));
 };
 
 /**
