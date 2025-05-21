@@ -13,9 +13,7 @@ document.querySelector("#app").innerHTML = `
     </a>
     <h1 id="app-title">Hello Vite!</h1>
     <div class="card">
-     
     </div>
-   
   </div>
 `;
 
